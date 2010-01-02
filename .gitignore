@@ -1,0 +1,6 @@
+parts/*
+downloads/*
+eggs/*
+bin/*
+*.pyc
+
