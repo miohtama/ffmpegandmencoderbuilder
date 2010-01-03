@@ -2,8 +2,6 @@
 #
 # Fix gpac compilation for OSX
 # 
-INSTDIRS+=osmozilla
-
 
 import os
 import sys
