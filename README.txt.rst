@@ -16,6 +16,8 @@ Design goals
 
 * Repeatable - maintaining and tailoring the build process is easy, patches and configuration fixes are scripted
 
+* Aimed for video file batch processing - players are not considered
+
 Prerequisitements
 -----------------
 
@@ -27,14 +29,24 @@ Please install the following before starting
 
 * All build essentials needed for your operating system
 
-	* OSX: XCode and `Macports <http://www.macports.org/> commands`_
+On OSX XCode and `Macports <http://www.macports.org/> commands`_ are handy.
 	
-	* Ubuntu/Debian: sudo apt-get install build-essential g++ python perl
+On Ubuntu/Debian the following should get you started::
+
+	sudo apt-get install build-essential g++ python perl yasm
 
 Libraries
 ---------
 
 Currently the script compiles static builds of
+
+* ffmpeg
+
+* mencoder (mplayer)
+
+and their dependencies and build dependencies:
+
+* yasm
 
 * gpac
 
@@ -44,16 +56,12 @@ Currently the script compiles static builds of
 
 * libx264
 
-* ffmpeg
-
-* mencoder (mplayer)
-
 Tested
 ------
 
 The building script is tested on the following operating systems
 
-* OSX Leopard
+* OSX 10.5 Leopard
 
 * Ubuntu 8.04 Hardy Heron
 
